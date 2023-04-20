@@ -1,4 +1,6 @@
-n = int(input())
+n = int(input('Введите неотрицательное число\n'))
+while n < 0:
+    n = int(input('Введите неотрицательное число!!\n'))
 temp, i = n, 0
 
 while temp != 0:
@@ -7,5 +9,4 @@ while temp != 0:
     temp -= 1
 
 print('') if n in (0, 1) else print('Простое') if i == 2 else print('Составное')
-
 
