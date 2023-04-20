@@ -5,4 +5,8 @@ def fib(n):
         return fib(n - 2) + fib(n - 1)
 
 
-print(fib(int(input())))
+n = int(input('Введите число больше 0\n'))
+while n <= 0:
+    n = int(input('Введите число больше 0!!\n'))
+
+print(fib(n))
